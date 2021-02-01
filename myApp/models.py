@@ -4,7 +4,7 @@ class Post(models.Model):
     """Model definition for Post."""
 
     title = models.CharField(max_length = 150)
-    fieldName = models.CharField(max_length = 150, blank=True)
+    fieldName = models.CharField(max_length = 150, blank=True, null=True)
     comment = models.TextField()
     
 
@@ -14,6 +14,3 @@ class Post(models.Model):
         verbose_name = 'Post'
         verbose_name_plural = 'Posts'
 
-    def __str__(self):
-        """Unicode representation of Post."""
-        pass
