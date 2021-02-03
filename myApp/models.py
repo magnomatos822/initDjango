@@ -13,8 +13,8 @@ class Category(models.Model):
     class Meta:
         """Meta definition for Category."""
 
-        verbose_name = 'Category'
-        verbose_name_plural = 'Categories'
+        verbose_name = 'Categoria'
+        verbose_name_plural = 'Categorias'
 
     def __str__(self):
         """Unicode representation of Category."""
